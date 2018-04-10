@@ -415,7 +415,9 @@ public class RestClient {
         HttpURLConnection connection = (HttpURLConnection) newUrl.openConnection();
         return connection;
 
+    }
 
-
+    public String getImagesUrl(String url) {
+        return urlFactory.getImagesUrl(url);
     }
 }

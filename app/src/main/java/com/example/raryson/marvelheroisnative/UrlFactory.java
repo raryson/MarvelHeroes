@@ -59,6 +59,12 @@ public class UrlFactory {
         return addAuthorizationParameters(urlBuilder).toString();
     }
 
+    public String getImagesUrl(String url) {
+
+        UrlBuilder urlBuilder = UrlBuilder.fromString(url);
+        return addAuthorizationParameters(urlBuilder).toString();
+    }
+
     public String getCharacterURL(int characterId) {
         UrlBuilder urlBuilder = UrlBuilder.fromString(String.format(CHARACTERS_BY_ID_URL, characterId));
         return addAuthorizationParameters(urlBuilder).toString();
